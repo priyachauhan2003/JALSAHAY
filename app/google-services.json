@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "98033806276",
+    "firebase_url": "https://base-project-14a6e-default-rtdb.firebaseio.com",
+    "project_id": "base-project-14a6e",
+    "storage_bucket": "base-project-14a6e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98033806276:android:e881c1d1182ae4eaebd291",
+        "android_client_info": {
+          "package_name": "com.internshala.jalsahayfinal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5e3DH7d2aSywW82aqZtNViio9MjfN23g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98033806276:android:6655637851e81de7ebd291",
+        "android_client_info": {
+          "package_name": "com.techmania.jalsahay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5e3DH7d2aSywW82aqZtNViio9MjfN23g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
