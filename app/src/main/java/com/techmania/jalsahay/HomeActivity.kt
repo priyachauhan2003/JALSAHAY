@@ -1,5 +1,6 @@
 package com.techmania.jalsahay
 
+import android.graphics.Color
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
@@ -18,6 +19,7 @@ class HomeActivity : AppCompatActivity() {
 
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        window.statusBarColor = Color.TRANSPARENT
 
         val navView: BottomNavigationView = binding.navView
 

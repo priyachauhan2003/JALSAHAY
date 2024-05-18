@@ -21,6 +21,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        window.statusBarColor = Color.TRANSPARENT
         binding.signin.text = Html.fromHtml(
                     "<font color=#1E88E5> Create a new account</font>"
         )
