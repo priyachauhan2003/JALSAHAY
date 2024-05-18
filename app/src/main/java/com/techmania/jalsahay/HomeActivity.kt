@@ -19,7 +19,7 @@ class HomeActivity : AppCompatActivity() {
 
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        window.statusBarColor = Color.TRANSPARENT
+        window.statusBarColor = Color.BLACK
 
         val navView: BottomNavigationView = binding.navView
 
