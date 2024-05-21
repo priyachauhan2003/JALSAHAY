@@ -3,7 +3,12 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/</item>
         <item>@font/abril_fatface</item>
+        <item>@font/aladin</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/beth_ellen</item>
+        <item>@font/galada</item>
         <item>@font/poppins</item>
         <item>@font/poppins_extrabold_italic</item>
+        <item>@font/timmana</item>
     </array>
 </resources>

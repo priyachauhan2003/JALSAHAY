@@ -9,9 +9,18 @@
         <item name="android:fontFamily">@font/poppins_extrabold_italic</item>
         <item name="android:textSize">30dp</item>
 
-    </style><style name="text_theme">
+    </style>
+    <style name="text_theme">
 
         <item name="android:fontFamily">@font/poppins</item>
+
+    </style>
+    <style name="Toolbar_text">
+
+        <item name="android:fontFamily">@font/galada</item>
+        <item name="android:textSize">35dp</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textStyle">bold</item>
 
     </style>
 

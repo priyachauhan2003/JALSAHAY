@@ -11,18 +11,13 @@
         android:id="@+id/materialToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/light_blue"
+        app:title="Jalsahay"
+        android:background="@color/white"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:title="JALSAHAY"
-        />
+        app:titleTextAppearance="@style/Toolbar_text"
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Submit Report"
-        android:backgroundTint="@color/blue"/>
+        />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
@@ -31,6 +26,13 @@
 
     </com.google.android.material.tabs.TabLayout>
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/blue"
+        android:text="Submit Report" />
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
