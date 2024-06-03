@@ -30,9 +30,14 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:backgroundTint="@color/blue"
-        android:text="Submit Report" />
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rectangle_button"
+        android:text="Submit Report"
+        android:textColor="@color/dark_blue" />
+
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"

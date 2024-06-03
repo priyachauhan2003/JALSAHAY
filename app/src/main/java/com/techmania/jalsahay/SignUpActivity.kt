@@ -7,6 +7,7 @@ import android.text.Html
 import android.util.Log
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -18,6 +19,8 @@ import com.techmania.jalsahay.databinding.ActivityMainBinding
 import com.techmania.jalsahay.databinding.ActivitySignUpBinding
 import com.techmania.jalsahay.models.User
 import com.techmania.jalsahay.utils.USER_NODE
+import com.techmania.jalsahay.utils.USER_PROFILE_FOLDER
+import com.techmania.jalsahay.utils.uploadImage
 
 class SignUpActivity : AppCompatActivity() {
 
@@ -25,6 +28,19 @@ class SignUpActivity : AppCompatActivity() {
         ActivitySignUpBinding.inflate(layoutInflater)
     }
     lateinit var user: User
+
+    private val launcher = registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
+        uri?.let {
+            uploadImage(uri, USER_PROFILE_FOLDER) {
+                if (it == null) {
+
+                } else {
+                    user.image = it
+                    binding.profileImage.setImageURI(uri)
+                }
+            }
+        }
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -37,6 +53,9 @@ class SignUpActivity : AppCompatActivity() {
         binding.login.setOnClickListener {
             startActivity(Intent(this@SignUpActivity, LoginActivity:: class.java))
             finish()
+        }
+        binding.profileImage.setOnClickListener {
+            launcher.launch("image/*")
         }
         binding.signUpBtn.setOnClickListener{
             if (binding.name.editText?.text.toString().equals("") or
